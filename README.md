@@ -8,9 +8,13 @@ Automatically hides Gmail’s **“Upgrade”** button and footer clutter (Terms
 - ✅ Manifest V3 compliant
 
 <p align="center">
-  <img src="assets/screenshot-before.png" width="75%" alt="Before: Gmail with Upgrade + footer clutter"><br>
-  <img src="assets/screenshot-after.png" width="75%" alt="After: Clean Gmail UI">
+  <img src="assets/banner.png" width="90%" alt="Gmail Footer Cleaner — Before and After UI Comparison">
 </p>
+
+<p align="center">
+  <img src="assets/promo.png" width="60%" alt="Gmail Footer Cleaner — Chrome Web Store Promo Tile">
+</p>
+
 
 ## 📦 Install from source
 1. Download ZIP → Extract.  
