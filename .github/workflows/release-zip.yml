@@ -1,0 +1,27 @@
+name: Build Extension Zip
+
+on:
+  push:
+    tags: ['v*.*.*']   # runs when you push a tag like v1.0.2
+
+jobs:
+  build-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create dist
+        run: |
+          mkdir -p dist/icons dist/assets
+          cp manifest.json dist/
+          cp content.js dist/
+          cp -r icons/* dist/icons/ || true
+          cp -r assets/* dist/assets/ || true
+          cd dist && zip -r ../gmail-footer-cleaner.zip . && cd ..
+
+      - name: Create/Update GitHub Release and attach zip
+        uses: softprops/action-gh-release@v2
+        with:
+          files: gmail-footer-cleaner.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

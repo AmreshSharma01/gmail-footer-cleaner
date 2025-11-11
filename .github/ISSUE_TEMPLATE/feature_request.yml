@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest an improvement or new capability
+title: "[Feature]: "
+labels: ["enhancement"]
+# projects: ["AmreshSharma01/gmail-footer-cleaner"]   # optional
+# assignees: ["AmreshSharma01"]                        # optional
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem would this feature solve?
+      placeholder: I'm trying to do X, but Y makes it difficult…
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe how you'd like it to work.
+      placeholder: It would be great if…
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      placeholder: Any other solutions you've thought about?
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Constraints
+      options:
+        - label: Keep zero permissions / no data collection
+        - label: Keep performance minimal (no heavy dependencies)
+        - label: Maintain MV3 compliance
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      placeholder: Links, screenshots, references, etc.

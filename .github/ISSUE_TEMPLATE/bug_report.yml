@@ -1,0 +1,79 @@
+name: Bug report
+description: Report something that isn’t working as expected
+title: "[Bug]: "
+labels: ["bug", "triage"]
+# projects: ["AmreshSharma01/gmail-footer-cleaner"]   # optional
+# assignees: ["AmreshSharma01"]                        # optional
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Please provide as much detail as you can.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+      description: How can we reach you if we need more info?
+      placeholder: ex. email@example.com
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us what you expected to happen.
+      placeholder: Describe the issue and expected behavior.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: Extension version
+    # Update options as you release new versions
+      options:
+        - 1.0.1 (Current)
+        - Other / dev
+      default: 0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: browsers
+    attributes:
+      label: Affected browsers
+      description: Select all that apply.
+      options:
+        - label: Chrome (stable)
+        - label: Chrome (beta/dev/canary)
+        - label: Edge (Chromium)
+        - label: Other (specify below)
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: e.g., Windows 11 / macOS 14 / Ubuntu 22.04
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1) …\n2) …\n3) …"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console output / screenshots
+      description: Paste any relevant console messages or attach screenshots.
+      render: shell
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct.
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
