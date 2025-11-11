@@ -1,0 +1,1 @@
+Short Contributor Covenant variant (“Be respectful · Assume good intent”).
