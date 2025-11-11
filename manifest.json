@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Footer Cleaner",
+  "version": "1.0.1",
+  "description": "Automatically hides Gmail’s Upgrade pill and footer clutter. No permissions. No data collection.",
+  "author": "Amresh Sharma (contact: sharmaamresh@proton.me)",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": "icons/icon128.png",
+    "default_title": "Gmail Footer Cleaner"
+  },
+  "homepage_url": "https://github.com/AmreshSharma01/gmail-footer-cleaner",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
