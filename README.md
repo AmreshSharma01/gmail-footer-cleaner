@@ -20,7 +20,7 @@ Automatically hides Gmail’s **“Upgrade button”** and footer clutter (Terms
 3) **Load unpacked** → select the folder
 
 ## Chrome Web Store
-(coming soon) — link will appear here after approval.
+🔗 [Available on the Chrome Web Store](https://chromewebstore.google.com/detail/ljggkifiamlpeiboaeneoailhgaammep?utm_source=item-share-cb)
 
 ## Privacy
 Runs entirely in your browser; no data is collected or transmitted. See [PRIVACY.md](PRIVACY.md).
